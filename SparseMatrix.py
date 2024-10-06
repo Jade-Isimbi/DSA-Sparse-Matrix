@@ -132,8 +132,8 @@ class SparseMatrix:
 def main():
     try:
         # Load matrices from files
-        matrix1 = SparseMatrix.load_from_file("/home/jade/DSA-Sparse-Matrix/sample_inputs/easy_sample_03_3.txt")
-        matrix2 = SparseMatrix.load_from_file("/home/jade/DSA-Sparse-Matrix/sample_inputs/easy_sample_03_3.txt")
+        matrix1 = SparseMatrix.load_from_file("/home/jade/DSA-Sparse-Matrix/sample_inputs/easy_sample_03_1.txt")
+        matrix2 = SparseMatrix.load_from_file("/home/jade/DSA-Sparse-Matrix/sample_inputs/easy_sample_03_1.txt")
 
         # Get user input for operation
         print("\nChoose an operation:")
