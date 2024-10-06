@@ -1,6 +1,3 @@
-import os
-
-
 class SparseMatrix:
     def __init__(self, rows, cols):
         self.rows = rows
@@ -49,9 +46,7 @@ class SparseMatrix:
                     except ValueError:
                         raise ValueError("Input file format error: Matrix element must contain integers")
 
-                    if row >= numRows or col >= numCols:
-                        raise ValueError(f"Matrix element error: Element ({row}, {col}) is out of bounds")
-
+                    # Removed the bounds check for matrix dimensions
                     matrix.set_element(row, col, value)
 
                 return matrix
@@ -178,3 +173,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
